@@ -1,0 +1,40 @@
+Package: ShinyGLM
+Title: ShinyApp of fitting GLM to temporal omics data
+Version: 0.0.0.9000
+Authors@R: 
+    person("Jiahong", "Zhou", , "jzhou@danforthcenter.org", role = c("aut", "cre"))
+Description: This is a user friendly app built with Shiny for modeling temporal omics data using GLM to rank features, learn data trajectory, and suggest PRM/PTM targets.
+License: GPL (>= 3)
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Imports:
+    shiny,
+    shinyjs,
+    shinyBS,
+    shinycssloaders,
+    bslib,
+    tools,
+    htmltools,
+    plotly,
+    data.table,
+    dplyr,
+    tidyr,
+    tidyselect,
+    rlang,
+    ggplot2,
+    tibble,
+    ComplexHeatmap,
+    EnhancedVolcano,
+    car,
+    broom,
+    furrr,
+    purrr,
+    future,
+    readxl,
+    writexl,
+    ggforce,
+    ggdendro,
+    e1071,
+    ggalt,
+    htmlwidgets
