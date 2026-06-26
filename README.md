@@ -114,6 +114,8 @@ where `I` is the condition indicator, with `0` representing the reference condit
 
 The app can optionally center time before model fitting.
 
+<img src="README_files/Quadratic_Curve.png" width="300">
+
 ### 5. Feature ranking
 
 For each feature, the fitted model is used to generate predicted values across a dense grid of time points. The difference between conditions is summarized using RMSD, and the RMSD is weighted by the model adjusted R-squared value:
@@ -124,11 +126,15 @@ weighted RMSD = RMSD x adjusted R-squared
 
 Features with larger weighted RMSD values show greater modeled trajectory divergence between conditions.
 
+<img src="README_files/RMSD.png" width="300">
+
 ### 6. Permutation testing
 
 Permutation testing is used to estimate empirical p-values for weighted RMSD. The condition labels are permuted within time points to preserve the temporal structure of the data while generating a null distribution of trajectory differences.
 
 False discovery rate values are calculated from the empirical p-values.
+
+<img src="README_files/Permutation.png" width="500">
 
 ### 7. Trajectory classification
 
@@ -141,6 +147,8 @@ Features are classified into five trajectory categories:
 5. Cross-Model Discordance
 
 These categories summarize whether the two conditions show similar or opposing linear or polynomial temporal trends.
+
+<img src="README_files/Trajectory_Classification.png" width="400">
 
 ## Output
 
